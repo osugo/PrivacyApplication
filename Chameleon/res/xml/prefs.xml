@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="INTERVAL SETTINGS">
+        
+    <ListPreference
+        android:entries="@array/inbox"
+        android:entryValues="@array/ivalues"
+        android:key="inbox"
+        android:summary="Select an interval when the app intercepts and reroutes your SMS to your vault"
+        android:title="Inbox"
+        />
+    <ListPreference
+        android:entries="@array/log"
+        android:entryValues="@array/lvalues"
+        android:key="log"
+        android:summary="Select an interval when the app alters your call log"
+        android:title="Call Log"
+         />    
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="APPLICATION SETTINGS">
+        
+    <CheckBoxPreference
+        android:title="Deactivate"
+        android:summary="This will deactivate the application"
+        android:key="state"
+        android:defaultValue="false" />
+        
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>

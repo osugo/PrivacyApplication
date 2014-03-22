@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    
+    <LinearLayout 
+      style="@style/TitleBar">
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+             android:layout_gravity="center_vertical"
+            android:src="@drawable/states" 
+            android:clickable="true"
+            android:onClick="onClickHome"/>
+        
+         <ImageView style="@style/TitleBarSeparator" />
+     
+        <TextView style="@style/TitleBarText" />
+        
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:contentDescription="Add"
+            android:onClick="onClickAdd"
+            android:src="@drawable/title_add" />
+         
+    </LinearLayout>
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+   	android:background="@android:color/white">
+        
+    <EditText
+        android:id="@+id/fnameEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:imeOptions="actionNext"
+        android:textColor="@color/white" 
+        android:textColorHint="@color/silver"
+        android:layout_marginBottom="3dip"
+        android:background="@drawable/textview_border"
+        android:inputType="textPersonName|textCapWords" />
+
+    <EditText
+        android:id="@+id/numEdit"
+        android:layout_marginBottom="3dip"
+        android:layout_width="fill_parent"
+        android:textColor="@color/white" 
+        android:textColorHint="@color/silver"
+        android:background="@drawable/textview_border"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fnameEdit"
+        android:hint="Number"
+        android:imeOptions="actionDone"
+        android:inputType="phone" />
+    "
+
+    <EditText
+        android:id="@+id/snameEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_below="@+id/numEdit"
+        android:hint="Alias name"
+        android:imeOptions="actionNext"
+        android:textColorHint="@color/silver"
+        android:textColor="@color/white" 
+        android:background="@drawable/textview_border"
+        android:inputType="textPersonName|textCapWords" />
+
+    <EditText
+        android:id="@+id/aliasNum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snameEdit"
+        android:hint="Alias number"
+        android:textColorHint="@color/silver"
+        android:textColor="@color/white" 
+        android:background="@drawable/textview_border"
+        android:imeOptions="actionDone"
+        android:inputType="phone" />
+    <EditText
+        android:id="@+id/aliasMessagefield"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aliasNum"
+        android:hint="Alias messages"
+        android:textColorHint="@color/silver"
+        android:textColor="@color/white" 
+        android:background="@drawable/textview_border"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+    
+    <Button 
+        android:id="@+id/from_phonebook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pbook"
+        android:background="@drawable/green_button"
+        android:layout_marginBottom="5dip"
+        android:text="Contact from phonebook"
+        android:textColor="@color/white"
+        android:typeface="sans"/>
+    
+    <Button
+        android:id="@+id/pbook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveBtn"
+        android:background="@drawable/green_button"
+        android:layout_marginBottom="5dp"
+        android:text="Add alias from phonebook"
+        android:textColor="@color/white"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_button"
+        android:text="Save contact"
+        android:textColor="@color/white"
+        android:typeface="sans" />
+
+</RelativeLayout>
+
+</LinearLayout>

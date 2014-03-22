@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chameleon</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title">Chameleon</string>
+    <string name="button_add_contact">Add Contact</string>
+    <string name="save_btn">Save Contact</string>
+    <string name="add_menu">Add Contact</string>
+    <string name="edit_menu">Edit Contact</string>
+    <string name="delete_menu">Delete Contact</string>
+    <string name="name_hint">Name</string>
+    <string name="cap_hint">Alias Name</string>
+    <string name="code_hint">Mobile Number</string>
+    <string name="name_lbl">Full Names</string>
+    <string name="cap_lbl">Alias Name</string>
+    <string name="code_lbl">Number</string>
+    <string name="confirmTitle">Confirm Delete</string>
+    <string name="confirmMessage">This will permanently delete the entry!</string>
+    <string name="errorButton">OK</string>
+    <string name="errorTitle">Contact Details</string>
+    <string name="errorMessage">Please enter all the required fields</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="delete_btn">Delete</string>
+    <string name="app_label">Durian</string>
+    <string name="logTitle">Log Activity</string>
+    <string name="logMessage">This feature is only available on the pro version.</string>
+    <string name="upgrade_btn">Upgrade Now</string>
+    <string name="altNum">Alias number</string>
+    <string name="code2_lbl">Alias number</string>
+    <string name="dialogTitle">Chameleon contacts</string>
+    <string name="response"><u>feedback</u></string>
+    <string name="you_have_no_messages_">You have no messages.</string>
+   
+
+</resources>

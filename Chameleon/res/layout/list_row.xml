@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/trueDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <TextView
+            android:id="@+id/actualName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/actualNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aliasDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <TextView
+            android:id="@+id/aliasName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/aliasNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="number" />
+    </LinearLayout>
+
+</RelativeLayout>

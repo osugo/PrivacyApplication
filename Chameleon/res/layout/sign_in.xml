@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <EditText
+        android:id="@+id/passcreate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passconfirm"
+        android:layout_marginBottom="3dip"
+        android:hint="Create password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/silver" />
+
+    <EditText
+        android:id="@+id/passconfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submit"
+        android:hint="Confirm password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textColorHint="@color/silver" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/ButtonText"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_button"
+        android:text="Create Password"
+        android:textColor="@color/White"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/head" />
+
+</RelativeLayout>

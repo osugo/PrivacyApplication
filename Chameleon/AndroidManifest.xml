@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.chameleon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+   <uses-permission android:name="android.permission.WAKE_LOCK" />
+   <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+     <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE">
+        
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <receiver android:name=".IncomingSms" android:exported="true">   
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.project.chameleon.LoginPage"
+            android:label="@string/title"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+       
+
+        <receiver
+            android:name=".BootCompleted"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+         <receiver android:name=".IncomingCall">   
+                <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                </intent-filter>
+        </receiver>
+        
+         <receiver android:name=".OutgoingCallReceiver">   
+                <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                </intent-filter>
+        </receiver>
+        <receiver android:name="AlarmReceiver" >
+        </receiver>
+
+        <activity
+            android:name=".Contacts"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Feedback"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".LogActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" />
+         <activity
+            android:name=".VaultActivity"
+            android:label="@string/app_name"
+          />
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SignUp"
+            android:label="@string/app_name" 
+            android:noHistory="true"/>
+        <activity android:name=".Phonebook" >
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:label="@string/app_name" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".AddEditContact"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".DatabaseConnector"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".About"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ViewContact"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Interval"
+            android:label="@string/app_name" />
+         <service
+            android:name=".MyService"
+            android:label="@string/app_name" >
+        </service>
+        <service
+            android:name=".MyService" android:enabled="true" />
+          <service
+            android:name=".smsService" />
+           <service
+            android:name=".outgoingService" />
+   
+    </application>
+
+</manifest>

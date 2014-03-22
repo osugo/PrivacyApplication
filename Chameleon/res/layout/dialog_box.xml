@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/body"
+        style="@+style/body"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="This will permanently remove the entry!" />
+
+    <LinearLayout
+        style="@style/dialog_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/away"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="7dip"
+            android:paddingRight="4dip"
+            android:text="Delete" >
+        </Button>
+
+        <Button
+            android:id="@+id/close"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="7dip"
+            android:text="Close" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

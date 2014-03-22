@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/Green"
+    android:orientation="vertical"
+    >
+    
+    <RelativeLayout 
+        android:layout_height="50dip"
+        android:layout_width="wrap_content"
+        android:background="@drawable/slidingmenu_list_selector_background"
+        android:clickable="true"
+        android:onClick="seeContacts"
+        >
+        
+        <ImageView 
+            android:id="@+id/ctsIcon"
+            android:layout_height="40dip" 
+            android:layout_width="40dp"
+            android:src="@drawable/contacts_inv"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dip"
+            android:paddingLeft="5dip"
+            android:layout_alignParentLeft="true"
+            />
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textColor = "@color/white"
+            android:layout_toRightOf="@+id/ctsIcon"
+            android:layout_centerVertical="true"
+           	android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Contacts"
+            android:id="@+id/ctsText"
+            />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        />
+    
+        <RelativeLayout 
+        android:layout_height="50dip"
+        android:layout_width="wrap_content"
+        android:background="@drawable/slidingmenu_list_selector_background"
+        android:clickable="true"
+        android:onClick="privateMessages"
+        >
+        
+        <ImageView 
+            android:id="@+id/msgIcon"
+            android:layout_height="35dip" 
+            android:layout_width="40dp"
+            android:src="@drawable/vault_inv"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dip"
+            android:paddingLeft="5dip"
+            android:layout_alignParentLeft="true"
+            />
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textColor = "@color/white"
+            android:layout_toRightOf="@+id/msgIcon"
+            android:layout_centerVertical="true"
+           	android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Vault"
+            android:id="@+id/msgText"
+            />
+        
+        <!-- TextView to show unread messages count -->
+        <TextView 
+            android:layout_width="7dip"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_centerInParent="true"
+            android:text=" "
+            android:textColor="@color/white" />
+           <!-- android:background="@color/black" --> 
+            
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        />
+    
+        <RelativeLayout 
+        android:layout_height="50dip"
+        android:layout_width="wrap_content"
+        android:background="@drawable/slidingmenu_list_selector_background"
+        android:clickable="true"
+        android:onClick="Customise"
+        >
+        
+        <ImageView 
+            android:id="@+id/prefIcon"
+            android:layout_height="40dip" 
+            android:layout_width="40dp"
+            android:src="@drawable/settings_inv"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dip"
+            android:paddingLeft="5dip"
+            android:layout_alignParentLeft="true"
+            />
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textColor = "@color/white"
+            android:layout_toRightOf="@+id/prefIcon"
+            android:layout_centerVertical="true"
+           	android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Preferences"
+            android:id="@+id/prefText"
+            />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        />
+    
+        <RelativeLayout 
+        android:layout_height="50dip"
+        android:layout_width="wrap_content"
+        android:background="@drawable/slidingmenu_list_selector_background"
+        android:clickable="true"
+        android:onClick="appInfo"
+        >
+        
+        <ImageView 
+            android:id="@+id/abtIcon"
+            android:layout_height="30dip" 
+            android:layout_width="40dp"
+            android:src="@drawable/about"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dip"
+            android:paddingLeft="5dip"
+            android:layout_alignParentLeft="true"
+            />
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textColor = "@color/white"
+            android:layout_toRightOf="@+id/abtIcon"
+            android:layout_centerVertical="true"
+           	android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="About"
+            android:id="@+id/ctsText"
+            />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        />
+    
+    <RelativeLayout 
+        android:layout_height="50dip"
+        android:layout_width="wrap_content"
+        android:background="@drawable/slidingmenu_list_selector_background"
+        android:clickable="true"
+        android:onClick="sendResponse"
+        >
+        
+        <ImageView 
+            android:id="@+id/feedIcon"
+            android:layout_height="30dip" 
+            android:layout_width="40dp"
+            android:src="@drawable/feedback"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dip"
+            android:paddingLeft="5dip"
+            android:layout_alignParentLeft="true"
+            />
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:textColor = "@color/white"
+            android:layout_toRightOf="@+id/feedIcon"
+            android:layout_centerVertical="true"
+           	android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Feedback"
+            android:id="@+id/ctsText"
+            />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        />
+
+</LinearLayout>

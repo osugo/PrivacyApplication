@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="inbox">
+        <item>Immediately</item>
+        <item>5 Minutes</item>
+        <item>30 Minute</item>
+        <item>1 Hour</item>
+        <item>1 Day</item>
+        <item>1 Week</item>
+        <item>1 Month</item>
+    </string-array>
+    <string-array name="ivalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="log">
+        <item>Immediately</item>
+        <item>5 Minutes</item>
+        <item>30 Minute</item>
+        <item>1 Hour</item>
+        <item>1 Day</item>
+        <item>1 Week</item>
+        <item>1 Month</item>
+    </string-array>
+    <string-array name="lvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+</resources>

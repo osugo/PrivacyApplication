@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/TitleBar" >
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/title_logo" />
+"
+
+        <TextView
+            android:id="@+id/appname"
+            style="@style/TitleBarLogo"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/app_logo"
+            android:text="Chameleon"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+
+        <TextView style="@style/TitleBarText" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/homepage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="3dip" >
+
+            <RelativeLayout
+                android:id="@+id/people"
+                android:layout_width="fill_parent"
+                android:layout_height="84dip"
+                android:layout_marginBottom="6dip"
+                android:background="@drawable/menu_buttons"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/people_icon"
+                    android:layout_width="50dip"
+                    android:layout_height="80dip"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/my_contacts" />
+
+                <TextView
+                    android:id="@+id/ctstitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_toRightOf="@+id/people_icon"
+                    android:text="Contacts"
+                    android:textColor="@drawable/menu_text"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/ctsexp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ctstitle"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/people_icon"
+                    android:text="View Chameleon contacts"
+                    android:textColor="@drawable/menu_text"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/texts"
+                android:layout_width="fill_parent"
+                android:layout_height="84dip"
+                android:layout_marginBottom="6dip"
+                android:background="@drawable/menu_buttons"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/vault_icon"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="3dip"
+                    android:src="@drawable/messages" />
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="13dip"
+                    android:layout_toRightOf="@+id/vault_icon"
+                    android:text="Vault"
+                    android:textColor="@drawable/menu_text"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/txtexp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txttitle"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/vault_icon"
+                    android:text="Your private messages"
+                    android:textColor="@drawable/menu_text"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/preferences"
+                android:layout_width="fill_parent"
+                android:layout_height="84dip"
+                android:layout_marginBottom="6dip"
+                android:background="@drawable/menu_buttons"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/settings_icon"
+                    android:layout_width="50dip"
+                    android:layout_height="80dip"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/configure" />
+
+                <TextView
+                    android:id="@+id/setstitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_toRightOf="@+id/settings_icon"
+                    android:text="Preferences"
+                    android:textColor="@drawable/menu_text"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/setsexp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/setstitle"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/settings_icon"
+                    android:text="Personalise Chameleon"
+                    android:textColor="@drawable/menu_text"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/application"
+                android:layout_width="fill_parent"
+                android:layout_height="84dip"
+                android:background="@drawable/menu_buttons"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/about_icon"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="8dip"
+                    android:src="@drawable/title_about" />
+
+                <TextView
+                    android:id="@+id/infotitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="12dip"
+                    android:layout_toRightOf="@+id/about_icon"
+                    android:text="About"
+                    android:textColor="@drawable/menu_text"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/infoexp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/infotitle"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/about_icon"
+                    android:text="View app details"
+                    android:textColor="@drawable/menu_text"
+                    android:textStyle="normal|bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
